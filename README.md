@@ -242,7 +242,7 @@ When comparing the performance of two predictive models for housing price estima
 
 ### Actual vs. Predicted Plot with Overall Quality
 
-![Actual vs. Predicted with Overall Quality](act_no_oq.png)
+![Actual vs. Predicted with Overall Quality](pred_actual.png)
 
 - **Mean Squared Error (MSE):** 722083535.69
 - **Mean Absolute Error (MAE):** 17063.37
@@ -250,13 +250,17 @@ When comparing the performance of two predictive models for housing price estima
 
 Model 1 demonstrates superior performance with a lower MSE and MAE, indicating that its predictions are closer to the true values. The higher R-squared score (0.89) suggests that Model 1 explains approximately 89% of the variance in housing prices, making it a better fit to the data.
 
+### Regression Scatter Plot
+
+![Regression Scatter Plot](regression_scatter.png)
+
 
 
 ### Model 2:
 
 ### Actual vs. Predicted Plot without Overall Quality
 
-![Actual vs. Predicted without Overall Quality](pred_actual.png)
+![Actual vs. Predicted without Overall Quality](act_no_oq.png)
 
 - **Mean Squared Error (MSE):** 1696397433.48
 - **Mean Absolute Error (MAE):** 28305.44
@@ -269,9 +273,6 @@ In summary, Model 1 outperforms Model 2 in all evaluation metrics, demonstrating
 
 
 
-### Regression Scatter Plot
-
-![Regression Scatter Plot](regression_scatter.png)
 
 
 
