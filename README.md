@@ -272,9 +272,39 @@ In summary, Model 1 outperforms Model 2 in all evaluation metrics, demonstrating
 
 
 
+### XGBoost Model (Ancillary test) 
 
+```python
+# Create DMatrix for XGBoost
+dtrain = xgb.DMatrix(train_features_encoded, label=train_target)
+dval = xgb.DMatrix(val_features_encoded, label=val_target)
 
+# Set XGBoost parameters
+params = {
+    'objective': 'reg:squarederror',
+    'eval_metric': 'rmse',
+    'eta': 0.1,
+    'max_depth': 3
+}
 
+# Train the XGBoost model
+model = xgb.train(params, dtrain)
+
+# Make predictions on the validation set
+predictions = model.predict(dval)
+
+# Evaluate the model
+mse = mean_squared_error(val_target, predictions)
+mae = mean_absolute_error(val_target, predictions)
+r2 = r2_score(val_target, predictions)
+
+# Print the evaluation metrics
+print("Mean Squared Error (MSE):", mse)
+print("Mean Absolute Error (MAE):", mae)
+print("R-squared (R2) Score:", r2)
+```
+
+![XGBoost](XGBoost.png)
 
 
 
