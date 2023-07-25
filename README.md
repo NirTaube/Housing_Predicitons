@@ -181,9 +181,9 @@ In the provided feature importance tables, the key observation is that "Overall 
 # Using Random Forest
 
 We achieved the following results:
-Mean Squared Error (MSE): 722083535.6865124
-Mean Absolute Error (MAE): 17063.372939854453
-R-squared (R2) Score: 0.8876849575352795
+1. **Mean Squared Error (MSE):** 722083535.6865124
+2. **Mean Absolute Error (MAE):** 17063.372939854453
+3. **R-squared (R2) Score:** 0.8876849575352795
 
 The model's performance evaluation shows that it has achieved an R-squared score of 0.89, indicating that approximately 89% of the variance in housing prices can be explained by the features used in the model. The Mean Squared Error (MSE) is 722083535.69, and the Mean Absolute Error (MAE) is 17063.37. The results suggest that the model is performing well but could benefit from further improvement to reduce the prediction errors.
 
@@ -221,9 +221,9 @@ print("Mean Absolute Error (MAE):", mae)
 print("R-squared (R2) Score:", r2)
 ```
 
-Mean Squared Error (MSE): 1696397433.4777012
-Mean Absolute Error (MAE): 28305.44269718536
-R-squared (R2) Score: 0.736137246784133
+1. **Mean Squared Error (MSE):** 1696397433.4777012
+2. **Mean Absolute Error (MAE):** 28305.44269718536
+3. **R-squared (R2) Score:** 0.736137246784133
 
 ## Model Comparison: Evaluation Metrics
 
