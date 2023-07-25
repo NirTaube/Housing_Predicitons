@@ -181,6 +181,12 @@ In the provided feature importance tables, the key observation is that "Overall 
 # Using Random Forest
 
 We achieved the following results:
+
+### Top 10 Features with Importance (Including Overall Quality)
+
+![Top 10 Features with Importance (Including Overall Quality)](top_10_feat.png)
+
+
 1. **Mean Squared Error (MSE):** 722083535.6865124
 2. **Mean Absolute Error (MAE):** 17063.372939854453
 3. **R-squared (R2) Score:** 0.8876849575352795
@@ -189,8 +195,8 @@ The model's performance evaluation shows that it has achieved an R-squared score
 
 # Using Random Forest without Overall Quality
 
-# Taking away the "overalQual"
-# Make predictions for validation set
+### Taking away the "overalQual"
+### Make predictions for validation set
 
 ```python
 val_predictions = model.predict(val_features_encoded_imputed)
@@ -220,6 +226,9 @@ print("Mean Squared Error (MSE):", mse)
 print("Mean Absolute Error (MAE):", mae)
 print("R-squared (R2) Score:", r2)
 ```
+### Top 10 Features with Importance (Excluding Overall Quality)
+
+![Top 10 Features with Importance (Excluding Overall Quality)](top_10_feat_no_OQ.png)
 
 1. **Mean Squared Error (MSE):** 1696397433.4777012
 2. **Mean Absolute Error (MAE):** 28305.44269718536
@@ -231,13 +240,23 @@ When comparing the performance of two predictive models for housing price estima
 
 ### Model 1:
 
+### Actual vs. Predicted Plot with Overall Quality
+
+![Actual vs. Predicted with Overall Quality](act_no_oq.png)
+
 - **Mean Squared Error (MSE):** 722083535.69
 - **Mean Absolute Error (MAE):** 17063.37
 - **R-squared (R2) Score:** 0.89
 
 Model 1 demonstrates superior performance with a lower MSE and MAE, indicating that its predictions are closer to the true values. The higher R-squared score (0.89) suggests that Model 1 explains approximately 89% of the variance in housing prices, making it a better fit to the data.
 
+
+
 ### Model 2:
+
+### Actual vs. Predicted Plot without Overall Quality
+
+![Actual vs. Predicted without Overall Quality](pred_actual.png)
 
 - **Mean Squared Error (MSE):** 1696397433.48
 - **Mean Absolute Error (MAE):** 28305.44
@@ -246,3 +265,20 @@ Model 1 demonstrates superior performance with a lower MSE and MAE, indicating t
 In contrast, Model 2 exhibits higher MSE and MAE values, indicating less accurate predictions compared to Model 1. The lower R-squared score (0.74) suggests that Model 2 explains only about 74% of the variance in housing prices.
 
 In summary, Model 1 outperforms Model 2 in all evaluation metrics, demonstrating its superior accuracy and reliability in predicting housing prices.
+
+
+
+
+### Regression Scatter Plot
+
+![Regression Scatter Plot](regression_scatter.png)
+
+
+
+
+
+
+
+
+
+
