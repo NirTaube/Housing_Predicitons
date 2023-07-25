@@ -306,7 +306,9 @@ print("R-squared (R2) Score:", r2)
 
 ![XGBoost](XGBoost.png)
 
-
+1. **Mean Squared Error (MSE):** 6656655120.28332
+2. **Mean Absolute Error (MAE):** 67277.62219071062
+3. **R-squared (R2) Score:** -0.03539613570721856
 
 
 
