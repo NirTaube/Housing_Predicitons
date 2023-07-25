@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Area vs. Sale Price Scatter Plot</title>
+  <!-- Load D3.js library -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: rgb(120, 47, 64);
+      color: rgb(206, 184, 136);
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    /* Optional CSS styles for the scatter plot container */
+    #scatterplot-container {
+      margin: 20px auto;
+      position: relative; /* Add position relative to the scatterplot container */
+    }
+
+    /* Optional CSS styles for the axis labels */
+    .axis-label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Optional CSS styles for the tooltip */
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 8px;
+      border-radius: 4px;
+      pointer-events: none;
+      opacity: 0; /* Set initial opacity to 0 */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Living Area vs. Sale Price</h1>
+  </header>
+
+  <!-- Container for the scatter plot -->
+  <div id="scatterplot-container"></div>
+
+  <!-- Tooltip element -->
+  <div class="tooltip"></div>
+
+  <!-- Load the JavaScript file -->
+  <script src="JS/GLAvsSP.js"></script>
+</body>
+
+</html>

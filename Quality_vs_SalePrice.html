@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overall Quality vs. Sale Price Box & Whisker</title>
+  <!-- Load D3.js library -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <!-- Load d3-tip library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: rgb(120, 47, 64);
+      color: rgb(206, 184, 136);
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+    /* Optional CSS styles for the box and whisker plot container */
+    #boxplot-container {
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Overall Quality vs Sale Price</h1>
+  </header>
+
+  <!-- Container for the box and whisker plot -->
+  <div id="boxplot-container"></div>
+  <!-- Load the JavaScript file -->
+  <script src="JS/JS_Script.js"></script>
+</body>
+</html>
